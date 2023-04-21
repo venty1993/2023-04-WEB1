@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .content1 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+        }
+
+        .content2 {
+            width: 200px;
+            height: 200px;
+
+            border: 1px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            margin-left: 30px;
+        }
+
+        .content3 {
+            width: 200px;
+            overflow: hidden;
+
+            border: 1px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            margin-left: 30px;
+        }
+
+        .content4 {
+            width: 200px;
+            height: 200px;
+            overflow-y: scroll;
+            border: 1px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content1">
+        <h4>콘텐츠를 딱 맞게 입력</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nulla voluptas in mollitia quia perferendis
+            totam, voluptatum dolorem autem voluptates adipisci corporis </p>
+    </div>
+    <div class="content2">
+        <h4>그냥 넘침</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nulla voluptas in mollitia quia perferendis
+            totam, voluptatum dolorem autem voluptates adipisci corporis rem commodi, nostrum quibusdam, assumenda ut?
+            Fuga, qui?</p>
+    </div>
+    <div class="content3">
+        <h4>콘텐츠 양에따라 높이 늘어남</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nulla voluptas in mollitia quia perferendis
+            totam, voluptatum dolorem autem voluptates adipisci corporis rem commodi, nostrum quibusdam, assumenda ut?
+            Fuga, qui?</p>
+    </div>
+    <div class="content4">
+        <h4>넘치는건 안보이게</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nulla voluptas in mollitia quia perferendis
+            totam, voluptatum dolorem autem voluptates adipisci corporis rem commodi, nostrum quibusdam, assumenda ut?
+            Fuga, qui?</p>
+    </div>
+    <!-- div.content$*4>h4+p -->
+</body>
+
+</html>

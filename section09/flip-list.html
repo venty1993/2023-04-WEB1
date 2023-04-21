@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        body {
+            background-color: #f0f0f0;
+        }
+
+        #footer-nav {
+            padding: 0 16px;
+        }
+
+        .outter-list {
+            border-bottom: 1px solid #AAA;
+            padding: 8px 0;
+        }
+
+        .outter-list>label {
+            display: block;
+            width: 100%;
+            padding: 4px 0;
+        }
+
+        .outter-list>input {
+            display: none;
+        }
+
+        .outter-list>input:checked+.inner-list-contaianer {
+            height: 0px;
+            overflow: hidden;
+
+        }
+
+        .inner-list>a {
+            display: block;
+            padding: 4px;
+            color: #444;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="footer-nav">
+
+
+        <ul class="outter-list-container">
+            <li class="outter-list">
+                <label for="shopping">쇼핑 및 알아보기</label>
+                <input type="checkbox" name="" id="shopping">
+                <ul class="inner-list-contaianer">
+                    <li class="inner-list">
+                        <a href="#">Mac</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">iPad</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">iPhone</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">watch</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="outter-list">
+                <label for="wallet">애플 지갑</label>
+                <input type="checkbox" name="" id="wallet">
+                <ul class="inner-list-contaianer">
+                    <li class="inner-list">
+                        <a href="#">지갑</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">애플페이</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="outter-list">
+                <label for="wallet1">애플 지갑</label>
+                <input type="checkbox" name="" id="wallet1">
+                <ul class="inner-list-contaianer">
+                    <li class="inner-list">
+                        <a href="#">지갑</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">애플페이</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="outter-list">
+                <label for="wallet2">애플 지갑</label>
+                <input type="checkbox" name="" id="wallet2">
+                <ul class="inner-list-contaianer">
+                    <li class="inner-list">
+                        <a href="#">지갑</a>
+                    </li>
+                    <li class="inner-list">
+                        <a href="#">애플페이</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>
