@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2::before {
+            content: '하하';
+        }
+
+        p::after {
+            content: '호호';
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: pink;
+        }
+
+
+        .update {
+            /* 나중에배울거 */
+            position: relative;
+            width: fit-content;
+        }
+
+        .update::after {
+            display: block;
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: red;
+
+            /* 나중에배울거 */
+            position: absolute;
+            top: 0;
+            left: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>TITLE-1</h2>
+    <h2>TITLE-1</h2>
+    <h2>TITLE-1</h2>
+    <h2>TITLE-1</h2>
+    <h2 class="update">TITLE-1</h2>
+    <h2>TITLE-1</h2>
+    <h2>TITLE-1</h2>
+    <h2>TITLE-1</h2>
+    <h2>TITLE-1</h2>
+    <h2>TITLE-1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi enim optio ipsam odio itaque, iure libero
+        accusantium laborum aperiam repellat excepturi at quas explicabo perspiciatis earum ut. Voluptates, voluptatibus
+        nostrum.</p>
+    <div class="circle"></div>
+</body>
+
+</html>

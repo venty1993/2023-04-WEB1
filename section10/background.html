@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            /* width: 100%; */
+            /* width: 100vw; */
+            height: 50vh;
+
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        #main-intro {
+            background-image: url(img/img/art.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* cover : 커버한다. 덮다. 빈칸이 안보이게 배경을 꽉 채워주는것 */
+        /* contain : 이미지를 항상 전부 보여주고싶어한다. */
+
+        #test {
+            background-image: url(img/img/art.jpg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="main-intro">
+
+    </section>
+    <section id="test"></section>
+    <section></section>
+    <section></section>
+</body>
+
+</html>
