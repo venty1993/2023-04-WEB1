@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        header,
+        footer {
+            width: 1000px;
+            margin: 0 auto;
+            border: 1px solid black;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        header {
+            margin-bottom: 16px;
+        }
+
+        main {
+            width: 1000px;
+            margin: 0 auto;
+            overflow: hidden;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            float: left;
+            background-color: yellow;
+            height: 96px;
+            line-height: 96px;
+            width: 200px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        header>nav {
+            float: right;
+            background-color: bisque;
+        }
+
+        nav>ul {
+            overflow: hidden;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        li>a {
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            color: #222;
+        }
+
+        .top-menu {
+            margin-bottom: 32px;
+        }
+
+
+        .top-menu>li {
+            background-color: yellow;
+        }
+
+        .bottom-menu>li {
+            background-color: orange;
+        }
+
+        #article-wrapper {
+            float: left;
+            margin-right: 16px;
+        }
+
+        article {
+            width: 700px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+            padding: 16px;
+            line-height: 120%;
+        }
+
+        article:last-child {
+            margin-bottom: 0;
+        }
+
+        article>h2 {
+            background-color: bisque;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            padding: 4px 0;
+        }
+
+        aside {
+            width: 284px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>WEB-logo</h1>
+        <!-- nav>ul*2>li*4 -->
+        <nav>
+            <ul class="top-menu">
+                <li>
+                    <a href="#">menu-1</a>
+                </li>
+                <li>
+                    <a href="#">menu-1</a>
+                </li>
+                <li>
+                    <a href="#">menu-1</a>
+                </li>
+                <li>
+                    <a href="#">menu-1</a>
+                </li>
+            </ul>
+            <ul class="bottom-menu">
+                <li>
+                    <a href="#">menu-2</a>
+                </li>
+                <li>
+                    <a href="#">menu-2</a>
+                </li>
+                <li>
+                    <a href="#">menu-2</a>
+                </li>
+                <li>
+                    <a href="#">menu-2</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="article-wrapper">
+            <article>
+                <h2>Main article</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex expedita doloribus illum a sapiente cum
+                    architecto quidem delectus similique perspiciatis amet iure, esse nesciunt natus accusantium at
+                    officiis ullam maxime?</p>
+            </article>
+            <article>
+                <h2>Main article</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex expedita doloribus illum a sapiente cum
+                    architecto quidem delectus similique perspiciatis amet iure, esse nesciunt natus accusantium at
+                    officiis ullam maxime?</p>
+            </article>
+            <article>
+                <h2>Main article</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex expedita doloribus illum a sapiente cum
+                    architecto quidem delectus similique perspiciatis amet iure, esse nesciunt natus accusantium at
+                    officiis ullam maxime?</p>
+            </article>
+            <article>
+                <h2>Main article</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex expedita doloribus illum a sapiente cum
+                    architecto quidem delectus similique perspiciatis amet iure, esse nesciunt natus accusantium at
+                    officiis ullam maxime?</p>
+            </article>
+            <article>
+                <h2>Main article</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex expedita doloribus illum a sapiente cum
+                    architecto quidem delectus similique perspiciatis amet iure, esse nesciunt natus accusantium at
+                    officiis ullam maxime?</p>
+            </article>
+        </section>
+        <aside>
+            <h2>Right aise</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vel, illum commodi id consequatur omnis
+                adipisci in itaque, officia quibusdam rerum ducimus quasi modi iste. Quos id unde dignissimos optio.</p>
+            <label for="input-mail"></label>
+            <input type="email" id="input-mail">
+            <button>mailto</button>
+            <div class="text-wrapper">
+                <h3>TEXT</h3>
+                <p>banner</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        HTML5 COPYRIGHT&copy;
+    </footer>
+</body>
+
+</html>
