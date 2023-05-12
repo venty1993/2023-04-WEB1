@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ebebeb;
+        }
+
+        .content {
+            width: 50%;
+            /* height: 400px; */
+            border-radius: 4px;
+            background-color: white;
+            padding: 16px;
+        }
+
+        .image-container {
+            height: 200px;
+            background-color: #cdcdcd;
+            position: relative;
+
+        }
+
+        .this-is-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 25%;
+        }
+
+        .plus-button {
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-color: #000000;
+            opacity: 0.5;
+            border-radius: 50%;
+            /* 이부분이 중요! */
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+        }
+
+        /* 버튼 디자인을 위한 사족입니다. */
+        .plus-button>span {
+            display: block;
+            width: 12px;
+            height: 2px;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .plus-button>span:nth-child(2) {
+
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <figure class="image-container">
+            <img class='this-is-image' src="8348837bb8a34f1270ab5af1015d7992.jpg" alt="ㅎㅎ">
+            <a href="#" class="plus-button">
+                <span></span>
+                <span></span>
+            </a>
+        </figure>
+        <h3>스케치 디자인</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eveniet. Soluta magnam nihil, est
+            distinctio, corrupti eveniet dolores blanditiis, eos sint nisi corporis error reprehenderit sunt laudantium
+            nulla recusandae quos!</p>
+    </div>
+</body>
+
+</html>
