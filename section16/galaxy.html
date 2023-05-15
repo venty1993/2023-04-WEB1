@@ -7,8 +7,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
+        .solar-system {
+            /* width: 100%; */
+            height: 100vh;
+            background-color: #232323;
+            position: relative;
+        }
 
+        .star {
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .sun {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .earth {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        .moon {
+            width: 20px;
+            height: 20px;
+            background-color: gray;
+            animation: moon-ani 0.4s infinite linear;
+
+        }
+
+        .earth-system {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            animation: earth-ani 36.5s infinite linear;
+
+        }
+
+        @keyframes earth-ani {
+            from {
+                transform: translate(-50%, calc(-50% - 300px)) rotate(0deg);
+                transform-origin: 50% calc(300px + 50%);
+            }
+
+            to {
+                transform: translate(-50%, calc(-50% - 300px)) rotate(360deg);
+                transform-origin: 50% calc(300px + 50%);
+            }
+        }
+
+        @keyframes moon-ani {
+            from {
+                transform: translate(-50%, calc(-50% - 100px)) rotate(0deg);
+                transform-origin: 50% calc(100px + 50%);
+            }
+
+            to {
+                transform: translate(-50%, calc(-50% - 100px)) rotate(360deg);
+                transform-origin: 50% calc(100px + 50%);
+            }
+
+        }
     </style>
 </head>
 
@@ -17,7 +87,7 @@
         <div class="sun star"></div>
         <div class="earth-system">
             <div class="earth star"></div>
-            <div class="moon star"></div>
+            <div class="moon star">달</div>
         </div>
     </div>
 </body>
