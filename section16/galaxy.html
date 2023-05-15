@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        :root {
+            --earth-padding: 300px;
+            --moon-padding: 100px;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -57,25 +62,25 @@
 
         @keyframes earth-ani {
             from {
-                transform: translate(-50%, calc(-50% - 300px)) rotate(0deg);
-                transform-origin: 50% calc(300px + 50%);
+                transform: translate(-50%, calc(-50% - var(--earth-padding))) rotate(0deg);
+                transform-origin: 50% calc(var(--earth-padding) + 50%);
             }
 
             to {
-                transform: translate(-50%, calc(-50% - 300px)) rotate(360deg);
-                transform-origin: 50% calc(300px + 50%);
+                transform: translate(-50%, calc(-50% - var(--earth-padding))) rotate(360deg);
+                transform-origin: 50% calc(var(--earth-padding) + 50%);
             }
         }
 
         @keyframes moon-ani {
             from {
-                transform: translate(-50%, calc(-50% - 100px)) rotate(0deg);
-                transform-origin: 50% calc(100px + 50%);
+                transform: translate(-50%, calc(-50% - var(--moon-padding))) rotate(0deg);
+                transform-origin: 50% calc(var(--moon-padding) + 50%);
             }
 
             to {
-                transform: translate(-50%, calc(-50% - 100px)) rotate(360deg);
-                transform-origin: 50% calc(100px + 50%);
+                transform: translate(-50%, calc(-50% - var(--moon-padding))) rotate(360deg);
+                transform-origin: 50% calc(var(--moon-padding) + 50%);
             }
 
         }
