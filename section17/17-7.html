@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        header {
+            background-color: #000;
+        }
+
+        .nav {
+            width: 1000px;
+            display: flex;
+            height: 40px;
+            /* overflow: hidden; 왜씀? */
+            /* position: relative; 왜씀? */
+            margin: 0 auto;
+        }
+
+        .nav li {
+            width: 100%;
+            font-size: 14px;
+            /* background-color: #000; 헤더에 들어가서 필요없어*/
+            text-align: center;
+            font-weight: 900;
+            font-family: Tahoma;
+            border-bottom: 1px solid #808080;
+            line-height: 40px;
+            box-sizing: border-box;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        /* 순서가 이상해 */
+        .submenu {
+            height: 0;
+            overflow: hidden;
+            transition-duration: 0.5s;
+        }
+
+        .submenu li {
+            font-size: 12px;
+            background-color: #999;
+            /* line-height: 40px; */
+            border-bottom: 1px solid #777;
+        }
+
+        .submenu li a {
+            color: black;
+        }
+
+        .nav li:hover .submenu {
+            height: 160px;
+        }
+
+        .nav>li:hover {
+            color: red;
+        }
+
+        .submenu>li:hover {
+            background-color: burlywood;
+            color: yellow;
+            /* 적용 안되는 이유는? */
+        }
+
+        .submenu>li:hover>a {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+
+        <ul class="nav">
+            <li>menu-1
+                <ul class="submenu">
+                    <li><a href="#">menu1-1</a></li>
+                    <li><a href="#">menu1-2</a></li>
+                    <li><a href="#">menu1-3</a></li>
+                    <li><a href="#">menu1-4</a></li>
+                </ul>
+            </li>
+            <li>menu-2
+                <ul class="submenu">
+                    <li><a href="#">menu2-1</a></li>
+                    <li><a href="#">menu2-2</a></li>
+                    <li><a href="#">menu2-3</a></li>
+                    <li><a href="#">menu2-4</a></li>
+                </ul>
+            </li>
+            <li>menu-3
+                <ul class="submenu">
+                    <li><a href="#">menu3-1</a></li>
+                    <li><a href="#">menu3-2</a></li>
+                    <li><a href="#">menu3-3</a></li>
+                    <li><a href="#">menu3-4</a></li>
+                </ul>
+            </li>
+            <li>menu-4
+                <ul class="submenu">
+                    <li><a href="#">menu4-1</a></li>
+                    <li><a href="#">menu4-2</a></li>
+                    <li><a href="#">menu4-3</a></li>
+                    <li><a href="#">menu4-4</a></li>
+                </ul>
+            </li>
+            <li>menu-5
+                <ul class="submenu">
+                    <li><a href="#">menu5-1</a></li>
+                    <li><a href="#">menu5-2</a></li>
+                    <li><a href="#">menu5-3</a></li>
+                    <li><a href="#">menu5-4</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <!-- ul.nav>li{menu-$}*5>ul.submenu>li*4>a{menu-$} -->
+
+    <script>
+        // const sub = document.querySelector('.submenu')
+        // setInterval(() => {
+        //     sub.style.height = '0px';
+        //     setTimeout(() => {
+        //         sub.style.height = '160px';
+
+        //     }, 1000);
+        // }, 2000);
+    </script>
+</body>
+
+</html>
