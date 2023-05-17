@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        .ani-con {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            border: 1px solid black;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            transform: scale(0);
+            opacity: 1;
+
+            animation: raider 2s infinite;
+
+        }
+
+        .circle:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .circle:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes raider {
+            from {
+                transform: scale(0);
+                opacity: 1;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ani-con">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+</body>
+
+</html>
