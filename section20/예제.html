@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        header {
+            background-color: pink;
+            padding: 0 32px;
+        }
+
+        a {
+            color: #222;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: blueviolet;
+        }
+
+        h1 {
+            padding: 20px;
+        }
+
+        .header-container {
+            /* width: 100%; 기본값 */
+            max-width: 1200px;
+            /* background-color: red; */
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-nav {
+            display: flex;
+        }
+
+        .header-icon-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .header-nav-list>a {
+            display: block;
+            padding: 20px;
+        }
+
+        .ham {
+            display: none;
+        }
+
+        @media screen and (max-width:767px) {
+            header {
+                padding: 0 16px;
+            }
+
+            nav {
+                display: none;
+            }
+
+
+            .ham {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>로고</h1>
+            <nav>
+                <ul class="header-nav">
+                    <li class="header-nav-list"><a href="#">메뉴</a></li>
+                    <li class="header-nav-list"><a href="#">메뉴</a></li>
+                    <li class="header-nav-list"><a href="#">메뉴</a></li>
+                    <li class="header-nav-list"><a href="#">메뉴</a></li>
+                    <li class="header-nav-list"><a href="#">메뉴</a></li>
+                    <li class="header-nav-list"><a href="#">메뉴</a></li>
+                </ul>
+            </nav>
+            <div class="header-icon-container">
+                <a href="#">아이콘</a>
+                <a href="#">아이콘</a>
+                <button class="ham">햄버거</button>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

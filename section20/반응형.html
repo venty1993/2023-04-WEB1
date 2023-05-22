@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 0 32px;
+
+        }
+
+        section {
+            /* 원래 width의 기본값은 100%*/
+            /* width: 1200px; */
+            max-width: 1200px;
+            /* height넣는거는 신중하게하세요! 지금은 예제라서 그냥 넣었습니다 */
+            height: 800px;
+            border: 5px solid pink;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width:767px) {
+            .container {
+                padding: 0 16px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section></section>
+    </div>
+</body>
+
+</html>

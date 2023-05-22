@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .ani-con {
+            width: 150px;
+            height: 250px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .ani-con>div {
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            position: absolute;
+
+        }
+
+        .ani-con>.stroke1 {
+            height: 250px;
+            animation: stroke1 5s infinite alternate;
+            transform-origin: top;
+            transform: scaleY(0);
+        }
+
+        .ani-con>.stroke2 {
+            top: 100px;
+            left: 50px;
+            animation: stroke2 5s infinite alternate;
+            transform-origin: left;
+            transform: scaleX(0);
+        }
+
+        .ani-con>.stroke3 {
+            height: 250px;
+            top: 0;
+            left: 100px;
+            animation: stroke3 5s infinite alternate;
+            transform-origin: top;
+            transform: scaleY(0);
+
+        }
+
+        @keyframes stroke1 {
+            0% {
+                transform: scaleY(0);
+            }
+
+            20% {
+                transform: scaleY(1);
+            }
+
+            100% {
+                transform: scaleY(1);
+            }
+        }
+
+        @keyframes stroke2 {
+            20% {
+                transform: scaleX(0);
+            }
+
+            40% {
+                transform: scaleX(1);
+            }
+
+            100% {
+                transform: scaleX(1);
+            }
+        }
+
+        @keyframes stroke3 {
+            40% {
+                transform: scaleY(0);
+            }
+
+            60% {
+                transform: scaleY(1);
+            }
+
+            100% {
+                transform: scaleY(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ani-con">
+        <div class="stroke1"></div>
+        <div class="stroke2"></div>
+        <div class="stroke3"></div>
+    </div>
+</body>
+
+</html>
