@@ -8,8 +8,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
     <style>
+        img {
+            display: block;
+            width: 100%;
+        }
+
         header {
             background-color: pink;
+            padding: 0 32px;
+        }
+
+        section {
             padding: 0 32px;
         }
 
@@ -55,18 +64,130 @@
             display: none;
         }
 
+        #intro-banner {
+            height: 800px;
+            background-image: url(unsplash_khQl5-qYDaA.png);
+            background-position: center;
+            background-size: cover;
+            /* background-repeat: no-repeat; */
+        }
+
+        #main-contents {
+            background-color: #ffe5e5;
+            padding-top: 32px;
+            padding-bottom: 80px;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* #intro-banner>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        } */
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 900;
+            text-align: center;
+            color: #222;
+            margin-bottom: 32px;
+        }
+
+
+        .contents-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .content {
+            display: flex;
+            gap: 16px;
+        }
+
+        .content>figure {
+            background-color: gray;
+            height: 400px;
+            width: 100%;
+        }
+
+
+        .contents-explane {
+            height: 400px;
+            display: flex;
+            gap: 16px;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .content-title {
+            height: 40px;
+            background-color: pink;
+            line-height: 40px;
+        }
+
+        footer {
+            background-color: #343434;
+            color: white;
+            padding: 40px 32px;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        .footer-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .footer-nav {
+            margin-bottom: 32px;
+        }
+
+        .footer-nav>ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .copy {
+            text-align: center;
+        }
+
+        @media screen and (max-width:1300px) {
+            .content {
+                flex-direction: column;
+            }
+
+
+        }
+
+
         @media screen and (max-width:767px) {
             header {
                 padding: 0 16px;
             }
 
-            nav {
+            section {
+                padding: 0 16px;
+            }
+
+            header nav {
                 display: none;
             }
 
 
             .ham {
                 display: block;
+            }
+
+            footer {
+                padding-left: 16px;
+                padding-right: 16px;
             }
         }
     </style>
@@ -93,6 +214,71 @@
             </div>
         </div>
     </header>
+    <section id="intro-banner">
+        <!-- <img src="unsplash_khQl5-qYDaA.png" alt="꽃"> -->
+    </section>
+    <main>
+        <section id="main-contents">
+            <div class="section-container">
+                <h2 class="section-title">제목</h2>
+
+                <div class="contents-wrapper">
+                    <article class="content">
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <div class="contents-explane">
+                            <h3 class="content-title">Lorem</h3>
+                            <p class="content-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis itaque
+                                iusto fugiat et ipsam repellendus similique animi molestiae. Soluta adipisci veritatis
+                                maxime? Veniam, dolores consequuntur atque quisquam expedita vel recusandae?</p>
+                        </div>
+                    </article>
+
+                    <article class="content">
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <div class="contents-explane">
+                            <h3 class="content-title">Lorem</h3>
+                            <p class="content-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aut
+                                eaque impedit doloribus consequatur. Assumenda error maiores dolore debitis ullam in,
+                                adipisci voluptates dolorum autem obcaecati dignissimos sint, porro quibusdam.</p>
+                        </div>
+                    </article>
+
+                    <article class="content">
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <div class="contents-explane">
+                            <h3 class="content-title">Lorem</h3>
+                            <p class="content-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aut
+                                eaque impedit doloribus consequatur. Assumenda error maiores dolore debitis ullam in,
+                                adipisci voluptates dolorum autem obcaecati dignissimos sint, porro quibusdam.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">MENU</a></li>
+                </ul>
+            </nav>
+            <p class="copy">&copy;Copyright By SOL</p>
+        </div>
+    </footer>
 </body>
 
 </html>
