@@ -158,9 +158,17 @@
             text-align: center;
         }
 
+        article.content:nth-child(2n)>figure {
+            order: 1;
+        }
+
         @media screen and (max-width:1300px) {
             .content {
                 flex-direction: column;
+            }
+
+            article.content:nth-child(2n)>figure {
+                order: 0;
             }
 
 
@@ -247,6 +255,28 @@
                         </div>
                     </article>
 
+                    <article class="content">
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <div class="contents-explane">
+                            <h3 class="content-title">Lorem</h3>
+                            <p class="content-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aut
+                                eaque impedit doloribus consequatur. Assumenda error maiores dolore debitis ullam in,
+                                adipisci voluptates dolorum autem obcaecati dignissimos sint, porro quibusdam.</p>
+                        </div>
+                    </article>
+                    <article class="content">
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <div class="contents-explane">
+                            <h3 class="content-title">Lorem</h3>
+                            <p class="content-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aut
+                                eaque impedit doloribus consequatur. Assumenda error maiores dolore debitis ullam in,
+                                adipisci voluptates dolorum autem obcaecati dignissimos sint, porro quibusdam.</p>
+                        </div>
+                    </article>
                     <article class="content">
                         <figure>
                             <img src="" alt="">
