@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        li {
+            list-style: none;
+        }
+
+
+        .unit-link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        #band-recommend {
+            background-color: pink;
+            padding: 50px 32px;
+        }
+
+        .section-container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .recommned-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .recommned-header>a {
+            text-decoration: none;
+            color: #232323;
+        }
+
+        .band-list-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 16px;
+        }
+
+        .band-list-contents {
+            width: 500px;
+            display: flex;
+            gap: 8px;
+            position: relative;
+        }
+
+        .band-thumbnail {
+            width: 100px;
+            height: 100px;
+            flex-shrink: 0;
+        }
+
+        .band-list-information {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .band-list-name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            /* 여기에 제한하고자 하는 줄 수를 입력한다. */
+            -webkit-box-orient: vertical;
+            color: #232323;
+            font-weight: 900;
+            text-decoration: none;
+            position: relative;
+            z-index: 2;
+            width: fit-content;
+        }
+
+        .band-list-name:hover {
+            text-decoration: underline;
+        }
+
+        .band-list-explane {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            /* 여기에 제한하고자 하는 줄 수를 입력한다. */
+            -webkit-box-orient: vertical;
+        }
+
+        .band-list-metadata {
+            display: flex;
+            gap: 4px;
+        }
+
+        .band-list-category-button {
+            padding: 8px;
+            color: #232323;
+            text-decoration: none;
+            position: relative;
+            z-index: 2;
+            width: fit-content;
+        }
+
+        .band-list-category {
+            font-weight: 900;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="band-recommend">
+        <div class="section-container">
+            <div class="recommned-header">
+                <h2>이런 밴드는 어때요</h2>
+                <a href="#">모두보기</a>
+            </div>
+            <ul class="band-list-wrapper">
+                <li class="band-list-contents">
+                    <a href="" class="unit-link"></a>
+                    <figure class="band-thumbnail">
+                        <img src="--main/band/band.img/0_cfbUd018svc1sia0uw8h44pb_uabpwc.jpg" alt="네이버">
+                    </figure>
+                    <div class="band-list-information">
+                        <a href="#" class="band-list-name">밴드이름asdasfasdfasdfasdfgf제대로 처리되나?ㄹㄹㄹㄹㄹ</a>
+                        <p class="band-list-explane">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem
+                            porro nostrum, nihil sint soluta ipsa ipsam eos corporis maxime fugit nulla adipisci fugiat
+                            incidunt sit consequatur? Quod, pariatur optio.</p>
+                        <p class="band-list-metadata">
+                            <span>멤버</span>999,999<span class="band-list-member-count"></span><span>리더</span><span
+                                class="band-list-reader-name">밴드마스터</span>
+                        </p>
+                        <a href="" class="band-list-category-button">
+                            <span class="band-list-category">네이버</span>밴드 더보기
+                        </a>
+                    </div>
+                </li>
+                <li class="band-list-contents">
+                    <a href="" class="unit-link"></a>
+                    <figure class="band-thumbnail">
+                        <img src="--main/band/band.img/0_cfbUd018svc1sia0uw8h44pb_uabpwc.jpg" alt="네이버">
+                    </figure>
+                    <div class="band-list-information">
+                        <a href="#" class="band-list-name">밴드이름asdasfasdfasdfasdfgf제대로 처리되나?ㄹㄹㄹㄹㄹ</a>
+                        <p class="band-list-explane">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem
+                            porro nostrum, nihil sint soluta ipsa ipsam eos corporis maxime fugit nulla adipisci fugiat
+                            incidunt sit consequatur? Quod, pariatur optio.</p>
+                        <p class="band-list-metadata">
+                            <span>멤버</span>999,999<span class="band-list-member-count"></span><span>리더</span><span
+                                class="band-list-reader-name">밴드마스터</span>
+                        </p>
+                        <a href="" class="band-list-category-button">
+                            <span class="band-list-category">네이버</span>밴드 더보기
+                        </a>
+                    </div>
+                </li>
+                <li class="band-list-contents">
+                    <a href="" class="unit-link"></a>
+                    <figure class="band-thumbnail">
+                        <img src="--main/band/band.img/0_cfbUd018svc1sia0uw8h44pb_uabpwc.jpg" alt="네이버">
+                    </figure>
+                    <div class="band-list-information">
+                        <a href="#" class="band-list-name">밴드이름asdasfasdfasdfasdfgf제대로 처리되나?ㄹㄹㄹㄹㄹ</a>
+                        <p class="band-list-explane">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem
+                            porro nostrum, nihil sint soluta ipsa ipsam eos corporis maxime fugit nulla adipisci fugiat
+                            incidunt sit consequatur? Quod, pariatur optio.</p>
+                        <p class="band-list-metadata">
+                            <span>멤버</span>999,999<span class="band-list-member-count"></span><span>리더</span><span
+                                class="band-list-reader-name">밴드마스터</span>
+                        </p>
+                        <a href="" class="band-list-category-button">
+                            <span class="band-list-category">네이버</span>밴드 더보기
+                        </a>
+                    </div>
+                </li>
+                <li class="band-list-contents">
+                    <a href="" class="unit-link"></a>
+                    <figure class="band-thumbnail">
+                        <img src="--main/band/band.img/0_cfbUd018svc1sia0uw8h44pb_uabpwc.jpg" alt="네이버">
+                    </figure>
+                    <div class="band-list-information">
+                        <a href="#" class="band-list-name">밴드이름asdasfasdfasdfasdfgf제대로 처리되나?ㄹㄹㄹㄹㄹ</a>
+                        <p class="band-list-explane">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem
+                            porro nostrum, nihil sint soluta ipsa ipsam eos corporis maxime fugit nulla adipisci fugiat
+                            incidunt sit consequatur? Quod, pariatur optio.</p>
+                        <p class="band-list-metadata">
+                            <span>멤버</span>999,999<span class="band-list-member-count"></span><span>리더</span><span
+                                class="band-list-reader-name">밴드마스터</span>
+                        </p>
+                        <a href="" class="band-list-category-button">
+                            <span class="band-list-category">네이버</span>밴드 더보기
+                        </a>
+                    </div>
+                </li>
+                <li class="band-list-contents">
+                    <a href="" class="unit-link"></a>
+                    <figure class="band-thumbnail">
+                        <img src="--main/band/band.img/0_cfbUd018svc1sia0uw8h44pb_uabpwc.jpg" alt="네이버">
+                    </figure>
+                    <div class="band-list-information">
+                        <a href="#" class="band-list-name">밴드이름asdasfasdfasdfasdfgf제대로 처리되나?ㄹㄹㄹㄹㄹ</a>
+                        <p class="band-list-explane">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem
+                            porro nostrum, nihil sint soluta ipsa ipsam eos corporis maxime fugit nulla adipisci fugiat
+                            incidunt sit consequatur? Quod, pariatur optio.</p>
+                        <p class="band-list-metadata">
+                            <span>멤버</span>999,999<span class="band-list-member-count"></span><span>리더</span><span
+                                class="band-list-reader-name">밴드마스터</span>
+                        </p>
+                        <a href="" class="band-list-category-button">
+                            <span class="band-list-category">네이버</span>밴드 더보기
+                        </a>
+                    </div>
+                </li>
+                <li class="band-list-contents">
+                    <a href="" class="unit-link"></a>
+                    <figure class="band-thumbnail">
+                        <img src="--main/band/band.img/0_cfbUd018svc1sia0uw8h44pb_uabpwc.jpg" alt="네이버">
+                    </figure>
+                    <div class="band-list-information">
+                        <a href="#" class="band-list-name">밴드이름asdasfasdfasdfasdfgf제대로 처리되나?ㄹㄹㄹㄹㄹ</a>
+                        <p class="band-list-explane">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem
+                            porro nostrum, nihil sint soluta ipsa ipsam eos corporis maxime fugit nulla adipisci fugiat
+                            incidunt sit consequatur? Quod, pariatur optio.</p>
+                        <p class="band-list-metadata">
+                            <span>멤버</span>999,999<span class="band-list-member-count"></span><span>리더</span><span
+                                class="band-list-reader-name">밴드마스터</span>
+                        </p>
+                        <a href="" class="band-list-category-button">
+                            <span class="band-list-category">네이버</span>밴드 더보기
+                        </a>
+                    </div>
+                </li>
+                <li class="band-list-contents">
+                    <a href="" class="unit-link"></a>
+                    <figure class="band-thumbnail">
+                        <img src="--main/band/band.img/0_cfbUd018svc1sia0uw8h44pb_uabpwc.jpg" alt="네이버">
+                    </figure>
+                    <div class="band-list-information">
+                        <a href="#" class="band-list-name">밴드이름asdasfasdfasdfasdfgf제대로 처리되나?ㄹㄹㄹㄹㄹ</a>
+                        <p class="band-list-explane">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem
+                            porro nostrum, nihil sint soluta ipsa ipsam eos corporis maxime fugit nulla adipisci fugiat
+                            incidunt sit consequatur? Quod, pariatur optio.</p>
+                        <p class="band-list-metadata">
+                            <span>멤버</span>999,999<span class="band-list-member-count"></span><span>리더</span><span
+                                class="band-list-reader-name">밴드마스터</span>
+                        </p>
+                        <a href="" class="band-list-category-button">
+                            <span class="band-list-category">네이버</span>밴드 더보기
+                        </a>
+                    </div>
+                </li>
+                <li class="band-list-contents">
+                    <a href="" class="unit-link"></a>
+                    <figure class="band-thumbnail">
+                        <img src="--main/band/band.img/0_cfbUd018svc1sia0uw8h44pb_uabpwc.jpg" alt="네이버">
+                    </figure>
+                    <div class="band-list-information">
+                        <a href="#" class="band-list-name">밴드이름asdasfasdfasdfasdfgf제대로 처리되나?ㄹㄹㄹㄹㄹ</a>
+                        <p class="band-list-explane">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem
+                            porro nostrum, nihil sint soluta ipsa ipsam eos corporis maxime fugit nulla adipisci fugiat
+                            incidunt sit consequatur? Quod, pariatur optio.</p>
+                        <p class="band-list-metadata">
+                            <span>멤버</span>999,999<span class="band-list-member-count"></span><span>리더</span><span
+                                class="band-list-reader-name">밴드마스터</span>
+                        </p>
+                        <a href="" class="band-list-category-button">
+                            <span class="band-list-category">네이버</span>밴드 더보기
+                        </a>
+                    </div>
+                </li>
+                <li class="band-list-contents">
+                    <a href="" class="unit-link"></a>
+                    <figure class="band-thumbnail">
+                        <img src="--main/band/band.img/0_cfbUd018svc1sia0uw8h44pb_uabpwc.jpg" alt="네이버">
+                    </figure>
+                    <div class="band-list-information">
+                        <a href="#" class="band-list-name">밴드이름asdasfasdfasdfasdfgf제대로 처리되나?ㄹㄹㄹㄹㄹ</a>
+                        <p class="band-list-explane">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem
+                            porro nostrum, nihil sint soluta ipsa ipsam eos corporis maxime fugit nulla adipisci fugiat
+                            incidunt sit consequatur? Quod, pariatur optio.</p>
+                        <p class="band-list-metadata">
+                            <span>멤버</span>999,999<span class="band-list-member-count"></span><span>리더</span><span
+                                class="band-list-reader-name">밴드마스터</span>
+                        </p>
+                        <a href="" class="band-list-category-button">
+                            <span class="band-list-category">네이버</span>밴드 더보기
+                        </a>
+                    </div>
+                </li>
+                <li class="band-list-contents">
+                    <a href="" class="unit-link"></a>
+                    <figure class="band-thumbnail">
+                        <img src="--main/band/band.img/0_cfbUd018svc1sia0uw8h44pb_uabpwc.jpg" alt="네이버">
+                    </figure>
+                    <div class="band-list-information">
+                        <a href="#" class="band-list-name">밴드이름asdasfasdfasdfasdfgf제대로 처리되나?ㄹㄹㄹㄹㄹ</a>
+                        <p class="band-list-explane">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste autem
+                            porro nostrum, nihil sint soluta ipsa ipsam eos corporis maxime fugit nulla adipisci fugiat
+                            incidunt sit consequatur? Quod, pariatur optio.</p>
+                        <p class="band-list-metadata">
+                            <span>멤버</span>999,999<span class="band-list-member-count"></span><span>리더</span><span
+                                class="band-list-reader-name">밴드마스터</span>
+                        </p>
+                        <a href="" class="band-list-category-button">
+                            <span class="band-list-category">네이버</span>밴드 더보기
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
